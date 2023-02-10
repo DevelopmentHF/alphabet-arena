@@ -37,3 +37,13 @@ for (let i=0; i<NUMLETTERS; i++) {
     newLetter.textContent = pickedchars[i];
     lettersElem.appendChild(newLetter);
 };
+
+// Alternate player turns after submit is clicked
+const submitBtn = document.querySelector("#submit");
+const playerone = document.querySelector("#p1");
+const playertwo = document.querySelector("#p2");
+
+submitBtn.addEventListener('click', () => {
+    playerone.classList.toggle("current");
+    playertwo.classList.toggle("current");
+});

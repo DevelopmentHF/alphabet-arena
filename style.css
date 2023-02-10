@@ -109,6 +109,12 @@ footer {
 
 .wildcard {
     color: #c8d6e5;
+    padding-bottom: 30px;
+    border-style: solid;
+    border-color: #576574;
+    border-top: 25px;
+    border-left: 25px;
+    border-right: 25px;
 }
 
 #wildvowel {
@@ -116,4 +122,20 @@ footer {
     color: #54a0ff;
     font-weight: bold;
     font-size: 3rem;
+}
+
+.players {
+    font-size: 3rem;
+    font-weight: bold;
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.player {
+    padding: 10px;
+}
+.current {
+    background-color: #576574;
+    border-radius: 10px;
 }
