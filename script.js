@@ -10,11 +10,20 @@ const generateLetters = function() {
         console.log(rngletter)
         pickedchars.push(rngletter);
     }
-}
+};
 
-// 
+// Pick a wildcard letter that is able to be used
+const generateWildcard = function() {
+    const vowels = "AEIOU";
+    let rngvowel = vowels.charAt(Math.floor(Math.random() * 5));
+    while (pickedchars.includes(rngvowel)) {
+        rngvowel = vowels.charAt(Math.floor(Math.random() * 5));
+    }
+    return rngvowel;
+};
 
 generateLetters();
+let wildcard = generateWildcard();
 
 const lettersElem = document.querySelector(".letters");
 for (let i=0; i<NUMLETTERS; i++) {
@@ -22,4 +31,4 @@ for (let i=0; i<NUMLETTERS; i++) {
     newLetter.classList.add("letter");
     newLetter.textContent = pickedchars[i];
     lettersElem.appendChild(newLetter);
-}
+};
