@@ -22,9 +22,14 @@ const generateWildcard = function() {
     return rngvowel;
 };
 
+// Generate the wildcard vowel
 generateLetters();
 let wildcard = generateWildcard();
+const wildcardElem = document.querySelector("#wildvowel");
+wildcardElem.textContent = wildcard;
+pickedchars.push(wildcard);
 
+// Generate letter squares onto the DOM
 const lettersElem = document.querySelector(".letters");
 for (let i=0; i<NUMLETTERS; i++) {
     const newLetter = document.createElement("div");

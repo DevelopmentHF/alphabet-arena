@@ -106,3 +106,14 @@ footer {
 #gohome:hover {
     background-color: #ff6b6b;
 }
+
+.wildcard {
+    color: #c8d6e5;
+}
+
+#wildvowel {
+    border-radius: 15px;
+    color: #54a0ff;
+    font-weight: bold;
+    font-size: 3rem;
+}
